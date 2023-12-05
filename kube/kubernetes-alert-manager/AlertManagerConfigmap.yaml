@@ -19,7 +19,7 @@ data:
           match:
             severity: slack
           group_wait: 10s
-          repeat_interval: 20m
+          repeat_interval: 1m
  
     receivers:
     - name: alert-emailer
@@ -31,5 +31,5 @@ data:
         require_tls: false
     - name: slack_demo
       slack_configs:
-      - api_url: https://hooks.slack.com/services/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
+      - api_url: https://hooks.slack.com/services/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
         channel: '#personal-test-channel'
